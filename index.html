@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Kraken Team - IT Consultants, Blockchain, and KVP Specialists</title>
+		<title>Kraken Team - IT Consultants & Blockchain Specialists</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
 		<!-- SEO Optimization -->
-		<meta name="description" content="Kraken Team menyediakan solusi IT konsultasi dan pengembangan teknologi terdepan, meliputi blockchain, cryptocurrency, KVP (Kraken Velocity Protocol), dan pengembangan aplikasi mobile.">
-		<meta name="keywords" content="IT Consultant, Fullstack Development, Blockchain Development, Kraken Velocity Protocol, Game Development, Flutter Mobile Development, Laravel Development, Pi Network, Cryptocurrency Infrastructure, Arbitrage Robot">
+		<meta name="description" content="Kraken Team menyediakan solusi IT konsultasi dan pengembangan teknologi terdepan, meliputi blockchain, cryptocurrency, dan pengembangan aplikasi mobile.">
+		<meta name="keywords" content="IT Consultant, Fullstack Development, Blockchain Development, Game Development, Flutter Mobile Development, Laravel Development, Pi Network, Cryptocurrency Infrastructure, Arbitrage Robot">
 		
 		<link rel="stylesheet" href="assets/css/main.css" />
 		
@@ -32,6 +32,19 @@
 				font-size: 1.2em;
 				padding: 0.7em 1.5em;
 			}
+			
+			/* Animations */
+			.item img {
+				transition: transform 0.3s ease;
+			}
+
+			.item img:hover {
+				transform: scale(1.05); /* Zoom effect on hover */
+			}
+
+			.item:hover header h3 {
+				color: #3498db; /* Change title color on hover */
+			}
 		</style>
 	</head>
 
@@ -42,7 +55,7 @@
 			<div class="top">
 				<!-- Logo -->
 				<div id="logo">
-					<span class="image avatar48"><img src="https://raw.githubusercontent.com/hendri2808/kraken-team-portfolio/master/images/kraken-team-logo.png" alt="Kraken Team Logo" /></span>
+					<span class="image avatar48"><img src="images/kraken-team-logo.png" alt="Kraken Team Logo" /></span>
 					<h1 id="title">Kraken Team <br />IT Consultants &<br />Blockchain Specialists</h1>
 				</div>
 
@@ -50,12 +63,21 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-						<li><a href="#kvp" id="kvp-link"><span class="icon solid fa-rocket">KVP</span></a></li>
 						<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
 						<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Us</span></a></li>
+						<li><a href="#profile" id="profile-link"><span class="icon solid fa-briefcase">Our Profile</span></a></li>
 						<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 					</ul>
 				</nav>
+			</div>
+
+			<div class="bottom">
+				<!-- Social Icons -->
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/hendri-rahmat-hendrianto-6897b22a" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/hendri2808" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.youtube.com/@hendrirh" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+				</ul>
 			</div>
 		</div>
 
@@ -75,30 +97,28 @@
 				</div>
 			</section>
 
-			<!-- KVP Section -->
-			<section id="kvp" class="two">
+			<!-- Profile -->
+			<section id="profile" class="two">
 				<div class="container">
 					<header>
-						<h2>Kraken Velocity Protocol (KVP)</h2>
+						<h2>Our Profile</h2>
 					</header>
-					<p>KVP (Kraken Velocity Protocol) adalah blockchain yang dirancang khusus untuk memfasilitasi pembuatan token, NFT, dan transaksi Web3 dengan biaya terjangkau dan performa tinggi. Kami menyediakan layanan blockchain yang mudah diakses oleh pengguna dari berbagai perangkat, termasuk ponsel dan PC, dengan fitur DAO untuk kolaborasi komunitas dan struktur biaya yang menguntungkan.</p>
-					<p><strong>Keuntungan menggunakan KVP:</strong></p>
-					<ul style="text-align: left;">
-						<li>Biaya rendah untuk pembuatan dan transaksi token.</li>
-						<li>Desain ramah pengguna untuk aplikasi Web3.</li>
-						<li>DAO untuk memberikan kontrol dan transparansi pada komunitas.</li>
-						<li>Reward menarik bagi penambang dan mekanisme staking yang kompetitif.</li>
-					</ul>
-					<footer>
-						<a href="https://drive.google.com/file/d/1P8dmdFleIhE04trCzEsFYkN3oh8-0sBe/view?usp=sharing" class="button">Pre-Release Whitepaper V.001</a>
-					</footer>
+					<div class="row">
+						<div class="col-4 col-12-mobile">
+							<span class="image fit"><img src="https://github.com/hendri2808/kraken-team-portfolio/tree/master/images/kvp-logo.png" alt="KVP Logo" /></span>
+						</div>
+						<div class="col-8 col-12-mobile">
+							<p><strong>Kraken Velocity Protocol (KVP)</strong> is our own blockchain project aimed at providing a highly scalable and efficient blockchain infrastructure. KVP is designed to support Web3 applications and facilitate decentralized finance (DeFi), gaming, and NFT projects.</p>
+							<p>We are committed to making blockchain accessible, allowing developers to build tokens, coins, and DApps on our chain with minimal cost and high performance.</p>
+							<a href="https://drive.google.com/file/d/1P8dmdFleIhE04trCzEsFYkN3oh8-0sBe/view?usp=sharing" target="_blank" class="button">Whitepaper</a>
+						</div>
+					</div>
 				</div>
 			</section>
 
-			<!-- Portfolio Section -->
+			<!-- Portfolio -->
 			<section id="portfolio" class="two">
 				<div class="container">
-					<a href="#" class="image fit"><img src="images/kraken-team-logo.png" alt="Kraken Team Logo" /></a>
 					<header>
 						<h2>Our Projects</h2>
 					</header>
@@ -128,7 +148,7 @@
 								<header>
 									<h3>Pi Node Guidance - Episode 1</h3>
 								</header>
-								<p style="text-align: left;">In this detailed tutorial video, we guide viewers through the preparation and computer setup required to install the Pi Network Node.</p>
+								<p style="text-align: left;">In this detailed tutorial video, we guide viewers through the preparation and computer setup required to install the Pi Network Node. From checking computer specs to verifying your public IP and ensuring ports are open, this guide covers it all. Whether you're new to Pi Network or familiar with its ecosystem, these essential steps will help you prepare your system for node operation.</p>
 								<p style="text-align: left;"><a href="https://www.youtube.com/watch?v=AqirX51ogy4" target="_blank">Watch the tutorial on YouTube</a></p>
 							</article>
 						</div>
@@ -136,15 +156,24 @@
 				</div>
 			</section>
 
-			<!-- Other sections remain unchanged -->
+			<!-- About Us -->
+			<section id="about" class="three">
+				<div class="container">
+					<header>
+						<h2>About Kraken Team</h2>
+					</header>
+					<p>Kraken Team is a dynamic IT consultancy duo with expertise in Fullstack Development, Blockchain Infrastructure, Cryptocurrencies, and Game Development. We strive to deliver innovative, tailored solutions for businesses seeking to optimize their IT infrastructure and embrace cutting-edge technology.</p>
+				</div>
+			</section>
+		</div>
 
-			<!-- Footer -->
-			<div id="footer">
-				<ul class="copyright">
-					<li>&copy; Kraken Team. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
+		<!-- Footer -->
+		<div id="footer">
+			<ul class="copyright">
+				<li>&copy; Kraken Team. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
 
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
@@ -154,6 +183,5 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
